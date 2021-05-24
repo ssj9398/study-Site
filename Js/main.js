@@ -4,7 +4,8 @@ const list = document.querySelector('.navbar__menu li ul');
 const icons = document.querySelector('.navbar__icons');
 const navbar = document.querySelector('.navbar');
 
-
+var search = document.querySelector(".search");
+var searchButton = search.querySelector("input[type=submit]");
 
 
 toggleBtn.addEventListener('click', () => {
@@ -14,9 +15,13 @@ toggleBtn.addEventListener('click', () => {
 });
 
 
-menu.addEventListener('click', () => {
+/* menu.addEventListener('click', () => {
     list.classList.toggle('active');
 
     // icons.classList.toggle('active');
-});
+}); */
 
+searchButton.addEventListener('click', () => {
+    alert("검색영역 개발 중입니다.");
+
+});

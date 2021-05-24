@@ -106,6 +106,14 @@ body {
     line-height: 1;
 }
 
+H1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
 ol,
 ul {
     list-style: none;
@@ -127,4 +135,11 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing : 0;
+}
+
+a {
+    color          : black;
+    text-decoration: none;
+    outline        : none;
+    padding        : 10px;
 }
