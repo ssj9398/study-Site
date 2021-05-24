@@ -1,0 +1,211 @@
+@import url(/Css/reset.css);
+
+#header {
+    height    : 0px;
+    background: rgb(247, 246, 246);
+}
+
+
+H1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#body {
+
+    min-height: 800px;
+    background: rgb(247, 246, 246);
+}
+
+#main {
+
+    width     : 960px;
+    background: rgb(247, 246, 246);
+    min-height: 800px;
+}
+
+#main-menu>ul {
+    display       : flex;
+    flex-direction: row;
+}
+
+#main-menu>ul>li {
+    margin-left: 10px;
+    list-style : none;
+}
+
+#header>.content-box,
+#footer>.content-box {
+    background-color: rgb(247, 246, 246);
+}
+
+#body>.content-box {
+    display: flex;
+}
+
+#footer {
+    height    : 100px;
+    background: rgb(247, 246, 246);
+}
+
+.content-box {
+    background  : #b087c020;
+    height      : inherit;
+    width       : 960px;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.list {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.images-list {
+    width        : 230px;
+    height       : 165px;
+    padding      : 3px;
+    border-radius: 10%;
+    flex-wrap    : wrap;
+}
+
+.section {
+
+    margin-bottom   : 50px;
+    background-color: white;
+}
+
+.search {
+    float: right;
+}
+
+/* Nav container */
+.nav {
+    display         : inline-block;
+    width           : 250px;
+    height          : 100%;
+    background-color: rgb(54, 83, 100);
+}
+
+.navbar {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    padding         : 8px 12px;
+    background-color: var(--background-color);
+    height          : inherit;
+
+    margin-left : auto;
+    margin-right: auto;
+
+}
+
+/* Logo with text */
+.navbar__logo {
+    font-size: 24px;
+    color    : var(--text-color);
+}
+
+.navbar__logo i {
+    color: var(--accent-color);
+}
+
+/* Menu */
+.navbar__menu {
+    display     : flex;
+    padding-left: 0;
+    list-style  : none;
+}
+
+.navbar__menu li {
+    padding       : 8px 12px;
+    flex-direction: column;
+}
+
+.navbar__menu li ul {
+    display       : none;
+    flex-direction: row-reverse;
+    text-align    : center;
+    width         : 60%;
+}
+
+
+.navbar__menu li:hover {
+    background-color: var(--accent-color);
+    border-radius   : 4px;
+}
+
+/* Icons */
+.navbar__icons {
+    list-style  : none;
+    color       : var(--text-color);
+    display     : flex;
+    padding-left: 0;
+}
+
+
+.navbar__icons li {
+    padding: 8px 12px;
+}
+
+/* Toggle button */
+.navbar__toggleBtn {
+    display  : none;
+    position : absolute;
+    right    : 32px;
+    font-size: 24px;
+    color    : var(--accent-color);
+}
+
+.navbar__menu li ul.active {
+    display: flex;
+}
+
+/* For small screen */
+@media screen and (max-width: 768px) {
+
+    /* Nav container */
+    .navbar {
+        flex-direction: column;
+        align-items   : flex-start;
+        padding       : 8px 24px;
+    }
+
+    /* Menu */
+    .navbar__menu {
+        display       : none;
+        flex-direction: column;
+        text-align    : center;
+        width         : 100%;
+    }
+
+    .navbar__menu a {
+        /* Fill in an entire line so that user can click on any space */
+        display: block;
+    }
+
+    /* Icons */
+    .navbar__icons {
+        display        : none;
+        justify-content: center;
+        width          : 100%;
+    }
+
+    /* Toggle button */
+    .navbar__toggleBtn {
+        display: block;
+    }
+
+    /* When toggle button is clicked - active state */
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+
+    .navbar__menu li ul.active {
+        display: flex;
+    }
+}
