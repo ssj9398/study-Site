@@ -42,7 +42,7 @@ a:active {
 
 #header>.content-box,
 #footer>.content-box {
-    background-color: rgb(247, 246, 246);
+    background-color: white;
 }
 
 #body>.content-box {
@@ -51,7 +51,7 @@ a:active {
 
 #footer {
     height    : 100px;
-    background: rgb(247, 246, 246);
+    background: white;
 }
 
 .content-box {
@@ -170,7 +170,7 @@ a:active {
 }
 
 /* For small screen */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 970px) {
 
     /* Nav container */
     .navbar {
@@ -215,6 +215,6 @@ a:active {
     }
 
     .content-box {
-        width: 480px;
+        width: 450px;
     }
 }
