@@ -143,3 +143,7 @@ a {
     outline        : none;
     padding        : 10px;
 }
+
+h3 {
+    font-size: 25px;
+}
