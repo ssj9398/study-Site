@@ -57,7 +57,7 @@ a:active {
 .content-box {
     background  : #b087c020;
     height      : inherit;
-    width       : 60%;
+    width       : 75%;
     margin-left : auto;
     margin-right: auto;
 }
@@ -267,7 +267,9 @@ a:active {
         display: flex;
     }
 
-    .content-box {}
+    .content-box {
+        width: 100%;
+    }
 
     .dropdown-content {
 
