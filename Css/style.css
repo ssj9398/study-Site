@@ -65,22 +65,31 @@ a:active {
 }
 
 .list {
-    display  : flex;
-    flex-wrap: wrap;
+    display         : flex;
+    flex-wrap       : wrap;
+    padding         : 10px;
+    background-color: rgb(247, 246, 246);
+    border-radius   : 10px;
 
+}
 
+.list-2 {
+    flex-wrap       : wrap;
+    padding         : 10px;
+    background-color: rgb(247, 246, 246);
+    border-radius   : 10px;
 }
 
 .images-list {
     width        : 210px;
     height       : 140px;
     padding      : 3px;
-    border-radius: 10%;
+    border-radius: 10px;
     flex-wrap    : wrap;
 }
 
 .section {
-    border-radius   : 5%;
+    border-radius   : 10px;
     margin-bottom   : 50px;
     background-color: white;
     margin          : 10px 10px 10px 10px;
@@ -120,7 +129,7 @@ a:active {
 }
 
 .navbar__logo i {
-    color: var(--accent-color);
+    color: orange;
 }
 
 /* Menu */

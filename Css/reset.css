@@ -124,6 +124,12 @@ q {
     quotes: none;
 }
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+    font-family: 'Nanum Gothic';
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -157,5 +163,6 @@ h4 {
 }
 
 p {
-    font-size: 15px;
+    font-size  : 15px;
+    line-height: 200%;
 }
