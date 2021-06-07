@@ -131,6 +131,10 @@ q {
         sans-serif;
 }
 
+window.scroll {
+    behavior: 'smooth'
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
