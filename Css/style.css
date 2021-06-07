@@ -5,7 +5,7 @@
     background: rgb(247, 246, 246);
 }
 
-#top {
+#topscroll {
     display      : none;
     position     : fixed;
     bottom       : 200px;
@@ -26,7 +26,7 @@
     behavior     : 'smooth';
 }
 
-#top:hover {
+#topscroll:hover {
     background-color: orange;
     background-image: url('../images/icon_goTop_on.png');
     transition      : all 0.3s;

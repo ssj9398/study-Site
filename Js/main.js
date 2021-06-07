@@ -8,27 +8,35 @@ var search = document.querySelector(".search");
 var searchButton = search.querySelector("input[type=submit]");
 var scrollDown = document.querySelector("#scroll-down");
 
-var top = document.querySelector("#top");
+var topscroll = document.querySelector("#topscroll");
 var bottom = document.querySelector("#bottom");
 
-top.addEventListener('click', (e) => {
-    e.stopPropagation();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+
 
 bottom.addEventListener('click', (e) => {
     e.stopPropagation();
     var height = document.body.scrollHeight;
-    window.scroll({ top: height, left: 0, behavior: 'smooth' });
+    window.scroll({ top: height, behavior: 'smooth' });
 });
 
-toggleBtn.addEventListener('click', () => {
+
+topscroll.addEventListener('click', (e) => {
+    console.log("aaa");
+    e.stopPropagation();
+    window.scroll({ top: 0, behavior: 'smooth' });
+
+});
+
+
+toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     console.log("aaa");
     menu.classList.toggle('active');
     //icons.classList.toggle('active');
 });
 
-searchButton.addEventListener('click', () => {
+searchButton.addEventListener('click', (e) => {
+    e.stopPropagation();
     alert("검색영역 개발 중입니다.");
 
 });
