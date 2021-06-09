@@ -21,7 +21,6 @@ bottom.addEventListener('click', (e) => {
 
 
 topscroll.addEventListener('click', (e) => {
-    console.log("aaa");
     e.stopPropagation();
     window.scroll({ top: 0, behavior: 'smooth' });
 
@@ -30,7 +29,6 @@ topscroll.addEventListener('click', (e) => {
 
 toggleBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    console.log("aaa");
     menu.classList.toggle('active');
     //icons.classList.toggle('active');
 });
