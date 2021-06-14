@@ -1,9 +1,11 @@
 @import url(../Css/reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Lora:ital@1&display=swap');
 
 * {
-    font-family: 'Source Code Pro',
-        monospace;
+    font-family: 'Karla',
+        sans-serif;
+    font-family: 'Lora',
+        serif;
 }
 
 #header {
