@@ -8,6 +8,10 @@
         serif;
 }
 
+p {
+    line-height: 200%;
+}
+
 #header {
     height    : 65px;
     background: rgb(247, 246, 246);
@@ -345,5 +349,9 @@ a:active {
 
         min-width: 400px;
 
+    }
+
+    img {
+        width: 100%;
     }
 }
