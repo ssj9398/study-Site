@@ -33,10 +33,10 @@
 ### 궁금함
 1.김버그 Html/Css로 마무리 해봐야함
 - 빠트린 내용이 있을거 같음
-2. Java Design Pattern
-3. NodeJs
-4. Jpa
-5. Es6
-6. Vue
-7. Thymeleaf
-8. Cloud
+2.Java Design Pattern
+3.NodeJs
+4.Jpa
+5.Es6
+6.Vue
+7.Thymeleaf
+8.Cloud
