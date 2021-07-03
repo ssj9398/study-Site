@@ -2,14 +2,14 @@
 - https://ssj9398.github.io/edu-Site/index.html
 
 ## 공부할 내용 및 기록
-~~1. 이고잉 Html/Css 2021-04-07 ~ 2021-04-18  ~~
+~~ 1. 이고잉 Html/Css 2021-04-07 ~ 2021-04-18  ~~
 - https://github.com/ssj9398/FE-Study
-~~2. 뉴렉처 Html/Css  2021-04-26 ~ 2021-05-07  ~~
+~~ 2. 뉴렉처 Html/Css  2021-04-26 ~ 2021-05-07  ~~
 - https://github.com/ssj9398/FE-Study
-~~3. 프로그래머스 JavaScript 2021-04-10 ~ 2021-04-18  ~~
+~~ 3. 프로그래머스 JavaScript 2021-04-10 ~ 2021-04-18  ~~
 - 아주 기초만 있었음
 - https://github.com/ssj9398/FE-Study
-~~4. 뉴렉처 VanillaJs & Dom  2021-05-06  ~~
+~~ 4. 뉴렉처 VanillaJs & Dom  2021-05-06  ~~
 - https://github.com/ssj9398/FE-Study
 5. Spring-boot-with-Jpa-blog 블로그  2021년 5월 1일~     
 - https://github.com/ssj9398/Spring-boot-with-Jpa-blog
@@ -22,7 +22,7 @@
 
 -----------------------------------------------------------------------------------------------------------
 
-###궁금함
+### 궁금함
 1.김버그 Html/Css로 마무리 해봐야함
 - 빠트린 내용이 있을거 같음
 2. Java Design Pattern
