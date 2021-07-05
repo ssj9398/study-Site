@@ -28,7 +28,8 @@
 8.얼마전에 끝낸 vanillaJs로 To-do list 만들어 보기 2021년 6월 25일~
 - https://github.com/ssj9398/ToDoList-VanillaJs
 
-9. Spring 과정 2021년 7월 5일 ~ 2021년 9월 4일
+9.Spring 과정 2021년 7월 5일 ~ 2021년 9월 4일
+- https://github.com/ssj9398/Sparta-Coding-Club
 - ![image](https://user-images.githubusercontent.com/48196352/124404498-2a455b80-dd76-11eb-8dd5-3c1ce4a2c18f.png)
 
 ----------------------------------------------------------------------------
