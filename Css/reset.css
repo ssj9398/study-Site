@@ -148,6 +148,8 @@ a {
     text-decoration: none;
     outline        : none;
     padding        : 10px;
+    display        : block;
+    width          : 100%;
 }
 
 h3 {

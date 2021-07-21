@@ -10,6 +10,7 @@
 
 p {
     line-height: 200%;
+    font-size  : 20px;
 }
 
 #header {
@@ -74,8 +75,9 @@ p {
 a:hover,
 a:active {
     text-decoration : none;
-    color           : #fff;
-    background-color: #f59000;
+    color           : white;
+    background-color: grey;
+    width           : 100%;
     border-radius   : 15%;
 
 }
@@ -211,7 +213,12 @@ a:active {
     display       : none;
     flex-direction: row-reverse;
     text-align    : center;
-    width         : 60%;
+    width         : 100%;
+}
+
+.Common>p>a {
+    width: 30%;
+    color: orange;
 }
 
 
