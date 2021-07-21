@@ -1,5 +1,5 @@
-# edu-Site
-- https://ssj9398.github.io/edu-Site/index.html
+# study-Site
+- https://ssj9398.github.io/study-Site/index.html
 
 ## 공부할 내용 및 기록
 ~~1.이고잉 Html/Css 2021-04-07 ~ 2021-04-18~~
