@@ -2,10 +2,9 @@ const toggleBtn = document.querySelector('.navbar__toggleBtn');
 const menu = document.querySelector('.navbar__menu');
 const list = document.querySelector('.navbar__menu li ul');
 const icons = document.querySelector('.navbar__icons');
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.nav_bar');
 
 var search = document.querySelector(".search");
-var searchButton = search.querySelector("input[type=submit]");
 var scrollDown = document.querySelector("#scroll-down");
 
 var topscroll = document.querySelector("#topscroll");
@@ -31,10 +30,4 @@ toggleBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     menu.classList.toggle('active');
     //icons.classList.toggle('active');
-});
-
-searchButton.addEventListener('click', (e) => {
-    e.stopPropagation();
-    alert("검색영역 개발 중입니다.");
-
 });
