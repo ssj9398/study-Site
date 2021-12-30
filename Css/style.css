@@ -129,6 +129,11 @@ a:active {
     margin-right: auto;
 }
 
+.wrap {
+    margin    : auto;
+    background: rgb(247, 246, 246);
+}
+
 .list {
     display         : flex;
     flex-wrap       : wrap;
@@ -184,6 +189,7 @@ a:active {
     background-color: white;
     height          : inherit;
 
+    border-radius: 10px;
 
 }
 
