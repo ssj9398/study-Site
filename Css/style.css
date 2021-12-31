@@ -77,7 +77,7 @@ a:active {
     text-decoration: none;
     color          : white;
 
-    width        : 100%;
+    /*width        : 100%;*/
     border-radius: 15%;
 
 }
@@ -135,11 +135,11 @@ a:active {
 }
 
 .list {
-    display         : flex;
-    flex-wrap       : wrap;
-    padding         : 10px;
-    background-color: rgb(247, 246, 246);
-    border-radius   : 10px;
+    display           : flex;
+    flex-wrap         : wrap;
+    padding           : 10px;
+    /*background-color: rgb(247, 246, 246);*/
+    border-radius     : 10px;
 
 }
 
@@ -182,12 +182,12 @@ a:active {
 }
 
 .nav_bar {
-    display         : flex;
-    justify-content : space-between;
-    align-items     : center;
-    padding         : 8px 12px;
-    background-color: white;
-    height          : inherit;
+    display           : flex;
+    justify-content   : space-between;
+    /*align-items     : center;*/
+    padding           : 8px 12px;
+    background-color  : white;
+    height            : inherit;
 
     border-radius: 10px;
 
@@ -248,11 +248,11 @@ a:active {
 
 /* Toggle button */
 .navbar__toggleBtn {
-    display  : none;
-    position : absolute;
-    right    : 32px;
-    font-size: 24px;
-    color    : var(--accent-color);
+    display    : none;
+    /*position : absolute;*/
+    right      : 32px;
+    font-size  : 24px;
+    color      : var(--accent-color);
 }
 
 .navbar__menu li ul.active {
@@ -370,6 +370,27 @@ img {
     img {
 
         height: 100px;
+    }
+
+
+}
+
+.my-pick {
+    background-color: beige;
+}
+
+.card-columns {
+    display: flex;
+}
+
+@media screen and (max-width: 580px) {
+    .card-columns {
+        display: block;
+        width  : 100%;
+    }
+
+    img {
+        height: 200px;
     }
 }
 
