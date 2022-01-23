@@ -5,12 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>edu-Site</title>
     <link href="../Css/style.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <style>
+        a {
+            color: black;
+        }
+
+        .cards-box {
+            display: flex;
+        }
+
+        .card-img-top {
+            width: 90%;
+        }
+
+        .list {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
+
 
 <body>
     <div id="topscroll" style="display: block; bottom: 150px;"></div>
@@ -59,7 +86,7 @@
                                                     </ul> -->
                             </li>
 
-                            <li class="dropdown"><a href="../html/study.html">기록</a>
+                            <li class="dropdown"><a href="../html/study.html">추천강의</a>
 
                             </li>
                         </ul>
@@ -81,52 +108,155 @@
     <div id="body">
         <div class="content-box">
             <main id="main">
-                <div class="search">
-                    <form action="">
-                        <fieldset>
-                            <input type=" text" name="" value="" placeholder="개발중...">
-                            <input type="submit" name="" value="검색">
-                        </fieldset>
-                    </form>
-                </div>
-
-
-                <!--
                 <section class="section">
+                    <div class="list">
+                        <h2>백엔드(Spring)</h2>
+                        <div id="cards-box" class="card-columns">
+                            <div class="card my-pick">
+                                <a href="https://www.youtube.com/playlist?list=PLq8wAnVUcTFUffyIZTTV0LZr1RrfQEuHX"><img
+                                        class="card-img-top"
+                                        src='https://i.ytimg.com/vi/MLqn_-GDu_E/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC56HMra4NgQIkDRbfZiOPyta9MHQ'
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a target="_blank" class="card-title">강의시간 : 8.5시간</a><br>
+                                    <a target="_blank" class="card-title">무료</a>
+                                    <p class="card-text"></p>
+                                    <p class="card-text comment">Html & Css</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="https://www.youtube.com/playlist?list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4"><img
+                                        class="card-img-top"
+                                        src='https://i.ytimg.com/vi/gxzy_CFqV1M/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDR14kgGjeiZtxyxzdcc6O6cuY3Ng'
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a target="_blank" class="card-title">강의시간 : 10시간</a><br>
+                                    <a target="_blank" class="card-title">무료</a>
+                                    <p class="card-text"></p>
+                                    <p class="card-text comment">VanillaJs</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a
+                                    href="https://edu.goorm.io/lecture/20583/%EA%B9%80%EB%B2%84%EA%B7%B8%EC%9D%98-html-css%EB%8A%94-%EC%9E%AC%EB%B0%8C%EB%8B%A4"><img
+                                        class="card-img-top"
+                                        src='https://grm-project-template-bucket.s3.ap-northeast-2.amazonaws.com/lecture/lec_abnek_1589965849144/coverImage.jpg?_=1590480955473'
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a target="_blank" class="card-title">강의시간 : 9시간</a><br>
+                                    <a target="_blank" class="card-title">유료</a>
+                                    <p class="card-text"></p>
+                                    <p class="card-text comment">Html & Css</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <h2>기록</h2>
-                    <hr>
-                    <section class="section2">
-                        <ul>
-                            <li>뉴렉처 Html/Css 100% (2021-04-26 ~ 2021-05-07)</li></br>
-                            <li>Inflearn(이고잉) Html 100% (2021-04-07 ~ 2021-04-18)</li></br>
-                            <li>프로그래머스 Javascript 100% (2021-04-10 ~ 2021-04-18)</li></br>
-                            <li>Javascript - Dom 강의 다보기 95% (2021-05-06 ~ 진행중)</li></br>
-                            <li>김버그 강의로 Html/Css 마무리 0%</li></br>
-                            <li>SpringBoot 블로그 만들어 보기 24% (2021-06-02 ~ 진행중)</li></br>
-                            <li>Es6 0% (예정)</li></br>
-                            <li>Java Design Pattern 0% (예정)</li></br>
-
-                            <hr>
-                            <li>제주도여행 마저 만들기 50?~%</li></br>
-                            <li>Edu-Site 만들기 진행형</li></br>
-                        </ul>
-                        <hr>
-                        <h3>추후</h3>
-                        <ul>
-                            <li>github.io블로그 다시 만드는중 jekyll스킨</li></br>
-                            <li>Es6, Thymeleaf, Java 디자인패턴, Java 스프링 과정 복습, 스프링 부트, JPA, Cloud 애플리케이션 개발</li>
-                            <li>es6 활용 이후 할 것 캡틴 판교 vue-advanced-lgcns 포크한거 할거 다하고 기능 추가해보기</li></br>
-                        </ul>
-                    </section>
-
-
+                        <h2>React(잘 알지 못합니다.)</h2>
+                        <div id="cards-box" class="card-columns">
+                            <div class="card my-pick">
+                                <a href="https://www.youtube.com/playlist?list=PLq8wAnVUcTFUffyIZTTV0LZr1RrfQEuHX"><img
+                                        class="card-img-top"
+                                        src='https://i.ytimg.com/vi/MLqn_-GDu_E/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC56HMra4NgQIkDRbfZiOPyta9MHQ'
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a target="_blank" class="card-title">강의시간 : 8.5시간</a><br>
+                                    <a target="_blank" class="card-title">무료</a>
+                                    <p class="card-text"></p>
+                                    <p class="card-text comment">Html & Css</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="https://www.youtube.com/playlist?list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4"><img
+                                        class="card-img-top"
+                                        src='https://i.ytimg.com/vi/gxzy_CFqV1M/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDR14kgGjeiZtxyxzdcc6O6cuY3Ng'
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a target="_blank" class="card-title">강의시간 : 10시간</a><br>
+                                    <a target="_blank" class="card-title">무료</a>
+                                    <p class="card-text"></p>
+                                    <p class="card-text comment">VanillaJs</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a
+                                    href="https://edu.goorm.io/lecture/20583/%EA%B9%80%EB%B2%84%EA%B7%B8%EC%9D%98-html-css%EB%8A%94-%EC%9E%AC%EB%B0%8C%EB%8B%A4"><img
+                                        class="card-img-top"
+                                        src='https://grm-project-template-bucket.s3.ap-northeast-2.amazonaws.com/lecture/lec_abnek_1589965849144/coverImage.jpg?_=1590480955473'
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a target="_blank" class="card-title">강의시간 : 9시간</a><br>
+                                    <a target="_blank" class="card-title">유료</a>
+                                    <p class="card-text"></p>
+                                    <p class="card-text comment">Html & Css</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">리뷰</span>
+                        </div>
+                        <textarea class="form-control" id="bookReview" cols="30" rows="5"
+                            placeholder="140자까지 입력할 수 있습니다."></textarea>
+                    </div>
+                    <div class="review">
+                        <button onclick="makeReview()" type="button" class="btn btn-primary">리뷰 작성하기</button>
+                    </div>
                 </section>
--->
             </main>
         </div>
     </div>
+
+    </section>
+
+    <div class="names-q1">
+
+    </div>
+
+    </main>
+    </div>
+    </div>
     <script src="../Js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            $.ajax({
+                type: "GET",
+                url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99",
+                data: {},
+                success: function (response) {
+                    let rows = response["RealtimeCityAir"]["row"];
+                    for (let i = 0; i < rows.length; i++) {
+                        let gu_name = rows[i]['MSRSTE_NM'];
+                        let gu_mise = rows[i]['IDEX_MVL'];
+                        let temp_html = `<li>${gu_name} : ${gu_mise}</li>`
+                        $('.names-q1').append(temp_html);
+                    }
+                }
+            })
+        });
+
+        function makeReview() {
+            let bookReview = $('#bookReview').val();
+
+            console.log(title + author + bookReview);
+            $.ajax({
+                type: "POST",
+                url: "/review",
+                data: { review: Review },
+                success: function (response) {
+                    //alert(response["msg"]);
+                    window.location.reload();
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>
