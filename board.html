@@ -14,74 +14,267 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">게시판</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">메뉴 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">메뉴 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">메뉴 3</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-        <div class="sidebar-sticky">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">메뉴 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">메뉴 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">메뉴 3</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">요리 레시피 리스트</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">메뉴 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">메뉴 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">메뉴 3</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-
-      <main role="main" class="col-md-10 ml-sm-auto">
-        <h1>게시판</h1>
-
-        <div class="card-columns">
-          <div class="card">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGRgaHBwZGhocHBwcHhgaGBoaGhoYHBwcIS4lHB4rIRoYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjYrJSs0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAQAAxQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAQIEBQYABwj/xABDEAACAQIEAwYDBQUGBQUBAAABAhEAAwQSITEFQVEGImFxgZGhsfATMlLB0QcUQmKSI3KywuHxFjNDgpNEc4Oi0hX/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAhEQEBAAICAgMBAQEAAAAAAAAAAQIRITEDEhNBYSJRBP/aAAwDAQACEQMRAD8AoZM08NyMUMUyaw2YwoaNrRmPSm27OutA7OOVCcmpD2lFNMUEdUalKnmBTkuamns3hQRiaSTypXNJQNLtSi/pSO1IUmg4GdqYSQaItojamuDvQd9oYoZNOZvCuUUQgNOO1KBTWega5BoRpc2tcdaBUJNI1culIxopprga6uCmoGkV1PYUlBo0TShZKPbpWQVRGKRzp60+4gArT8Owa4dEdgDddQ4n/pq33YH4yNZ5VMspjN0k9rpW4Ps/dfVgEX+fc+IUa+8VaYfsjZ/juOT/AChVHxmpVq+WYCZJMeZNXWGwF0kjJEcztXn+XLLqOvpjO1Xb7F4Y/wAVweMqf8tCxP7PVYf2d+D0dfzU/lWosYS5zHx3qUj5TlO9amWU7S4z6eR8b7KYnDDM6ZkH8ad5R58x6iqGvom2ZEHUHcda8o/aLwFMPcW5bGVLs90bK41MeBBmPA11xu3O8MU29OyxTV1MURwIrQLbam3CDTbbUx7sGiGOkc6aGmaR7lDz0HE00tXMxrmbSgRRpXJc9abTedRTs1IzUgM0hoFzU9W0pirNIKDprq6K6oNQjCaczwRpQ3belQgkCtQp2JPKtd2jDTbuoO7dVADyVwoBQnltWVZRrWj4dxUraClQ6mAyMJVoMT4Hxrj5rxGsLqtX2Z4cEtgmGcmS34eUA+FaVoArI8N7TYdQFMp4HvD3H5irb/8AtYdhAvIB/eH51cM8fXhMuburZW312oW8sQN9NKrrnHcMiwb9v+sfrVTju3eDtz/aG5zhFJ+JgVblE01Rjf4CvLP2o8dS5cTDoQfswzORydoAXzAmfOq/tF+0m9dUpYX7JDu0y59dl9KwaXiSSTJPPrTHmlqbGtPI5VGt3ROutS7d7cxXXSbIopjrRUemNcqKDFIwNKZpINAmXrpTSKe6n0pmWdqIINeVBHjRFXSgkCKKa29cDSE1xNQODU8LQxtT0uUC5K6n5qSg0Dv4UwNsPGuVtTSYb72o0FBLCa1OwZBtx0Y/EVX3XIo+AvfeHl71z8s3iG3mI03GlQL2IjkanYka+nyNV2I5eZ+VebEQrt7z/UzUK69ThZZzlRSzTMAEnfeByqywnZG8+rlbY6HvNHWFkehIrtjDtlHaoz3INeo4LsFZ0zu7nwhB7an41dYXsVg11+wUnqzO3+JorpjlIeteNWrhqbZYn1r2qz2Ywo/9NZ/8aH5ipq9ncMRBw1j/AMSf/mt+yaeLiaHr0r2xuyeDYa4a2P7oKf4CKg4n9n2Ecd37RD1V5/xhquzTx3WnA16BxH9mlwSbN5H/AJXBQ/1LmB9hWP4pwXEYf/nWnQbBzDIfJ1lfSZoK4tIrgOlNiiKCRpJPgJoOdIWaCy6bVIezcA1R465W/SgM9TcvRAnWm5dKUtNdRTZrlWmFqIKB4U11OUGuoLoiDT7PM+dLcof7wBtNBJZRFDtNv401LhnXTwpSxGoB1MDqSeXwPsaUDW40xOboOevIddvhVpg+E54L/wBIPzYf5felwGG1zHU9fDoOg+fPwurMCuF9d8RuY/6k4LCqghQAOgEDzPU+JqztAVUvi1QSzADqaocT27tLpbRn8fuDf+bX4UnK26b621SkavP/APjAkSoAHvUTE9sboHdOvsKntzqQepo1SENeOYXtbif43nykfnVlh+2D/jPvNLnlPpnUv29YQ0Va84w3bJvxT7GpfCu3TtcK3EGQk5W1BAG0g7zVnmn3C4t/lob2wQQQCDoQdQR0I51GwvFLb7NHnU8kEaV0xzxy6rNljGcX7C2Wl8OEsvvlKhrbH+7unmun8pry/jmKxmGuG1dt5G3WBKsv4lYaMv0Yr6AAqBxzglnF2javLI3VhoyN+JTyPwOxmlwxyu7GbjK8M4Nxy4j99VZTuGWdPDmKueK8CS8hvYfcaunNfPqPH3ql49wW5hL7Wbusao42uJyZfkRyPoSbgXGWsuNe7Ma+PIjmDXLyeK4/1gxZrmKFkIJBEEbiuArS9rbNvOHQZSwBK/hkAlT5Eke1ZyYrr48/bHbeOW4AV1p6miOo5U0CttFz11LFdUFs9wyJ9qYeelc4pqJtVBbT6xFTbKS/loPQ94+pHsq1Gwv3pG6q7/0Iz/5ak4DT009tB8qxleGp2uEcKKo+Ldp8hy2wGPNjsPLrVdxji+YlEPdGhPX/AEqjuLsWBAO3j5VnHHfa5Za6S8VxK5cnM0g8qiqlEwy9xnI0ytl03YMgHzPtSqJXNOkxA3ny6eNdZNdOdu0myBkYhoZO8VMAFREwdyfDeJjWpKWyCqv3GYSsxlPiWEx6jnuKncExXD1UfaIz3Mw1YErMnZR3SvmOlXWP4nhj3clsZdMqovdiNu7Cj9axbJ3GpjbN7Zt8MSrS6kK2U6wpHVWPmARPkOtfbaWGVVIOxEg9IIJ089tK45HuutsFEJGjPKquwmPvRSYm2Ei05yspzQeWYTGmoB0Mab7c61xYwk/vJW4oLEIYJCgZtNwD1+tK2r9rUZsxRlAUgF4M+ELPMD4150L8SqBVEzufz3qRh2IMm8o8GOmvMDnWLhvtqZWdN4O0DLHcaW1XLGVxzKtsfLf41aJ2pvIO5AOh1E+hBrz+1jFtzlzHNIYRCnQQYMydiDEjkavLGOSQBmaY1y6bxJJ9a5XxzG7jXtbxXqHZ3tKuJkOmRwdiZDDqPXl5VowK8twF8Icw5Detrwfj9toR3AYkKsmJJ0A861jn/WqmuEP9ofAhicI7KJu2Qbls8zA76f8Aco9wvSvIsPiLVpA6952EgnXL5Dl5719EMK+dL3Z6+xdrdtnto9xFy5T9y4yaiZ5dK6Z4+01tizauv4hnJYzTGUaQZ/KkdGUwwKnoQQfY0ya1jjMZqLJos0oNNpTWg9aWmaHnXVFXSIOdPNjNAAJPLmTRuHYU3LqWwYLsFk7CTqT5CTSdoMYcM7W0UgAlcx3MGNT+Q0rGWeuJ2mWWlpwDh6l3R4z3LdxEAIOVnRhJ9JEePhWYxuMKWmOzNCjwJGv50LDC8XDsxXfckH0A2o3aXCsUW4NVY5m8HP3vjLep6VnH2t/oxyv2zisakMobKZYkaENECNFgzt4QI8aBbWp+Gw5chEEuxhRMciSekQNTyrtUBZZGSJMyN5Gh2g9DJ0Ow2jWRxDCOqISyZRAIXNoWAILEk5mIM6adKvMR2fWxYLvcIulSAFy5ddMmveIidZHlVLw99VTLnAJISQA0AkoZjunWszKXpbjZ2Hwng9y+6oikk6ydAF/Ex5LvqdKu8bwxEAs276vedTAUHKx3KK55kLpO8gDerPs9xNMPbazesXHuXAzMUAJdIPdYBtQozDLOmulZC8+R2chldYKBpkMGUqWnmB3vbrU5t/Fskx/QLRiQWKMrSoIJCn+IEbggj1oF3DM1xhIdsx1BkN4g853ra4nhf7wcliyruxzlyXHdfUO7KQMx8Z1kaxWfxnCblp8jwjQQMzCCCNxv41v2m9M6utl4PwR7zqwTuBlVwTBkCSo5xt3thOpow4fZQTcdTqoARpkkEt3Y0AiJIG9B4dxO7ZDqrJDZSQ6hoKggETtoY6EVGt5JLM0vyEzMydDsPLx9s82/jX86/Vzb4esM1oZwsnKRJ01ABQ6k66eNAfiWoYkqY0ZDtvpB0jSoOG4gbTlkJBH8QYgH0YD4+NLawd5grC2xQkqDlgAnlOk7bnQ1m4ztJtcYPtNl7rqWH4lAB9VmD6RVzY4xYYffPgp0Yxrp9flUDCdk89rMWZXiTtlHPJGknbnVWbYtkq6AldP4Y3EHvDWsbxt4W45Y9vceCdoFfCG87D+yU/aGfwAkk+YHvNebYPHMuFQEwzh7rnxuuzx/9qz9viLJh7lhMw+1Kh9e6VU5lAHKTAPgp3nQmPxUBFnuiCfIaKPga3juTRELi2ILv3ie6oAHTnHx+dQLlCv4mWY9STr4mhC6ecV0B1eiKeooCjrRRQEyiupIrqIvcJiSjo43Vgw9DMfOtV2hwa30XEW9SACesfi8+R9D1rIRV52e4o1vuN90n2J5V5vNjlqZTuM5T7UWJfaTHWa0uI4a1hES8uZbiK7LtlzEwPBgAD4TFFxWFw4uJeXK2VgzWyYBIM5fFZ5UvG+0S4iMyKpBY5gxJOaNNRtoKzfNMsf1m5SxhuMcDez3071onRgNvA/hPh8xUKxeZSrAwVMqRpr6a9a3XD+MpblIVkf7ysJzDaPCg8T7O4a538PdCZirNaY6SJ+65+6e8dDoZ1PTWHmlmslxylZXH8Re8ACAWmBlBBJO5AA389dRUrg1lGKpli4R3MzQtzUSoJAyOYMHUbjTegYqxiLVxM1t1uEgI+oBYmAwZdI1gnnPTfX4rs0Lti4zPNxEbIohQW1YMZ2DTB1gadK7cScOnOTI8R4mVvLKvbZFyvlOViTJggjaTz8aH2f4a2MxSo7HvktccQCFAlmE6DkPCfCKrjMywMxz9qt+Co6FrucIoQ7iWKtAIQfwk7ZvHnWrdTaTvl6Zbe3YbOg7uRLbAQAcpbKwIiD3n20M1i73EbeJxpIVTl/jIAdoWDAUAALqNdTM1FHHAbbs7F9ZCTk7inQtrJMzoJ2rO28SoeUXIOQBLZTHJiZms4Y6u61lnLNRP7SYfJcYBAJh5jYsW0J2P3W3/LQOBwuodxGRpmPBSOcECBoNe8eoqQ3GbzMwyI+ZArhkzKVQls5B2Ik68h0oBxr3BbthdEOYgHRgpkTOwVZE66R0rdvNY1wFYuKjq6oHyxIYEqYABPgSZ8uVaU8dvLCwSlz7i5VSQdMucbjQ79OZmsziVKAlFITRSxMyY6bgbgH40b96Z7QtEHKGLSeQZYKgdCwUz4HrWLJea1Mrj00uI4y6goV8tdZmOep18P0rO4y+XYs3h8OtRHOxJLEbTy+vo0J3msTHGXgyztmqssG+Y/Hy6V16Xb2j2gU3hXPqSFH5/D51K4bfVbwnZT8tvyrcMQr/AA1kTOV0mNaiWMNmMVY8S4gXcydJ25UzAMv2inTcb7VYoN7hxHKI5fnUEghsvX5/WlbPtDikVMqqMzQSegjQD51jysuPOfbU1Yl/wgaloeauqo0Z5DenjMYABJOgAGpJ0iOZpi6VqexXDmd/tQhYIcqwFMXCJDFWZdFXvecUGgw3YZXsoHuOtwCHIhhnOuWOi/dkHUg1CufsxAknFMf/AIwP8xrWJedBH2d0ACB3S3+C4xPX1oI4mSYza/hO8dSjhH9s1Z+LHvR6y9WPN73ZILtcJ16Cgrw5kO+3Pr+la/FgozKZiSRII0MHY61U4hAQR5/GvF5JZdOeWOqr0xjAEbg7g6g+anQ0MLZzFsmVjzQxPmrAqfYUG8kGKjsa5y3HqszK49UC9wS2WZxdYk699Z18SpM+1V+O4Lcf/qIY2Go9TI1NWTPQHc11x8uS+1+1dZ4U4Cq4VkGY91lDSV0gztmg6+NRm4M4aVYRykqCPOCatHuGo7vXWebL8XaG3DSJ76id4HWJAPSn4Wytpg6sSw26fkRSs9Cc1ffKm6fcvb6kzuSSZ8+tR3euahMas5XlzGmM8U1moJMmK6TEXHCDHeOygufafkKqLGIPXvfOdYq0xDZMOT/FcIUf3d2+ED1qjiukjdTGvSdaPZvQRVaGPn5/rRkOk8qliytJexVt07zN9poAAJBEe81T3rgUkczof5RzB8ajLcbkY8tPSd6RFFJEtGFdTYrq0NUEJYAAknYDck7ADma9t7N8JGGw6W9CwEuertq5HUTCjwUV59+z3hYu4g3W+7aAI/vtOQ/9oV281FerlYGnp5Vkc1R3sqwhlDDoQCPY1IBobGtDO8e4YmT+zQKRrCiAeUQKwl3FQYNepYlZrDdpOCEkum+pPjXHyYe3KaZ3EOGGm9VzPSXmZDBBBqJcuT4GvLfGx6js9Bc1Ga8RQ2xFJhU9RnNR21pPtJpVaK1MVkI6UNiK65dqK92ukxpot3wqJcenvcoLtNdccWjCSalcPwpdwPejYfBNAJGrfdHQc2NXuCwy2lZzsqlvYVtqRQdoL0vkH3bYCjz0LH5D0qrFEckySdTJPiTqfjQ1qwp0VIsCVceE+2vyBoAqXgCM8HYwD5Mch+Dn2pSI670RDQlkTO409edFTaqgsV1KtdQe8/s3tH91ZlAWbjyTqWgKNNRA2Hoeta183VfY/rXkPCO0psILZui2gLMZtl5nWICkjn778hpuGdt8NcuJaW6HdjEC26ZidtSyisba026luY9j+oFKT1B+vKqxeJW+T2z5Om/9e9Jd4ii6u9tZ2zXVG/8A3+FXZpLaORHlNRMTZn1qJe45htvtrfpiEOomRlLR9eFBTiFlpyXR6ZTt/wC2eW1T2PVU8Z7Po4OmtYjHdn7ik5dQK9VbUSpzxyBE/lt4mq6+wjVGXl3hp56SPc0uqXF49icM66MpFQ83LpXqOPNgF1aM6GckEF5BgKGjNOsRzFVVns4jyzKuZjEA6M+sIp/CgmTzMnlT0SY7YQvTGevRP+DEgDc8+UnnQD2Rt8596nqmnnzNQXk6AEnwr0tOyFoCWhVG7MQAPMnSp2F4fh7Y/ssjH8Q1Px2FXUh615nhOAX7muXIvVt/Rasn4OuHGY9+NJI1nkAJjUwNIOszWxx+JVVJJAAEk9KosDh2xL52BCIe4p6/iPj8qu/qLJrlCwuBusM7JqeRZRCjYQQQfhUPj+IKW8kFSxAI27o12BIiQNRvrIrcXEAFeddpsVnxBA2QZfXdvyHpTazao5HyPyoS1KjSoyCkXOaPWipz8qGoo1oa+lWswuIPfJ/Ec39XeI9CSPSlVaS//CfMexn8z7US2KpTwK6iBa6iL10B0NA/c4YFTBn73SdD8CZqSTrXZxWVO4lxu8rOmGKpbzFUbIodlGmYkzlneAARIrKXsOzMWdizHUsxLE+ZOprSXFBqNdtDpTo7JguFr9ihb+IMfZ3H5ChPgkXWNdtNN/GrrDLntKgaGXNoWgBSSdABJMnrUL7AA6nXrtryHp+leW5f1eXuxx/mcfSJZxd9PuX7qdAHceWk1aWe2eOSZuLcG0OimPHu5T7zUIwDAInoPmenrTHAq+9hfHjVrhe0yLmdrDW7mjBrJBQsNBmtPppy1PpWpwXa/AErmuNnAjO63FUk6kjLmC+w6TXnbjX68IqM1qTqK6Y+S2csZ4b429uwnEbN0TadHE65HV4I3kDXmOXMUuJvqg19B9k7ExyGoHvXhDYQHWPWp3D+L4mx/wArEXF8MxZdP5TK/Cte0/1y+OvR7nEcSzylpYG2cF2HkAQqeSiepNdxviLoiO6ZWOgHU8wD0M89hPSaxmH7eY9DqyOf5ra6/wBOWo/E+1V3ElTiFzZZAVe6qzBMLG+g3J2pr9Tn/FpdJxN3Irf2YbTmX10Yga+VbPD4MW7Y0iBue78DWF4f2gtJ9xmtH8RTNHsW+VWmM46q4d2bFLdJACoILZjMaADKN5nTSk4ZsT+O4oW7bv8AhBMdfD3ry5QWJJ1JMk9STJNWN3GZrAtKWIzBmzRA/lGvMwfTxqOluKZZabwwIENVqVbuwUGaqUFXx3e2fNxYMnSpdhd/L8xUZFqThjv6fnW65wuITu+UH69CaZbHtUttV1+hUO3O3Qx7UhklrXUMqTXVUX5bWaCDrT3IHjQwOVZVxaSRSt9fXvTCIPjSq00A8W5EE8hG22siY3/2quOKHNh71aXLc68qi4jCr01rF8ct26Y+XKTSELq82EedOa8vJh7ijfuumorv3Ubxp9dKnxxflqKzj8Q9/Oml16j3qX+7j4fHT9aR8OOlX0h8lOwaZlMbE/IUR01EDlRsMmVEHIyfKTFOugSIry5Zf1Xsxn8xU4+ycpOulV6XT1rRXrcqwMTBA6ais1bSvT4b7SyvL5565SxIW540QNNcuGHSnjDL0rpcY5zOmyevxpSTG5pww69KU4delZ9V+T8QnaadaSpa2R0on2YFajnbsNbVP+6Pb86IG6VyPB1AbwaYPnlIPsRQgP2+ldb19f8AaiXSCZW2FHTMT7Ssx6mkVDzjyA0HlP59aFLrXU5RXURc3tTvTlt9DXOmpPhFP06AazWgj2o360EJ8KlMw2+ulDYRQDvII0FDuLpUh3nlQ3YwB8KAZgg+GtMRf9vXX509gYJjcbfX1rTbY0O+n+n6VkKVjQ+fx/0oF1TJ+XpUvLPx5c9etI1vX+aBPhvRRbqZcqxsq+krNRS3TerLHWzCuuoIUHzGn5VV3bRYCGynQzv6R418+c3l9PqcFtsdR4VmiIYjxNai4VRd9h8qy7tLk+Nenwfbzf8AT1E+1qKO6xQLFSGGlel5A8ulNzU9BTSPOsq5Tzp1Ig0p6qPjQNApVFOC05UoGoNaIBXIKObdaQBk6V1GyT9GuoLFjrz+ppLlzUeFKhgyeRqNcMn9aCdicoURpO2nSmMf9KivcMAT70RXnkBQFddNKCRtR1On19daa7ab0QFlEHX6+opiJHXWKezfQ18a7Od/HpNFS1Ub0O8SBp6U37TQ9f1pbryNN6CP++Mo9Jg7bdKrcTxFpMQPSrHEoGXeGqkxGFad/hXH4pt6PmukXEYhm+8SaHbQk1JTCjnUm3arpJI4ZZXK7p+HooWlycqKIFaQAiDp1+FJeTw50diKGW5VlQ1QUtttYpyIY2ptoxqRyPvQFC11clyQaRa0hyDXWpMVFdiDtRUckUBCa6hlqSgmB43350yKIzaE+PzmhQRrG9ZUpTb6509k0imMx0B30NHS4K0iOjzvoD41NFsRty3gVC+yh/Dep2+1IAqFjWZmZ/0oeIMDTbnSgaxXKghhv+sUCIZ3iiN5UJDNPVI9f1oEYaUJ7UmpAPWmj4UEI2YpfshRnMUMmshGAogNC3p81ocwoOQUaaERQchoQ0nxogpxGn10rIZbTejAa0ltNacFjSNK0FcUMnnRnagRvQJXU0V1ZH//2Q==" class="card-img-top" alt="이미지 1">
-            <div class="card-body">
-              <h5 class="card-title">글 제목 1</h5>
-              <p class="card-text">글 내용 1</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="이미지 2">
-            <div class="card-body">
-              <h5 class="card-title">글 제목 2</h5>
-              <p class="card-text">글 내용 2</p>
-            </div>
-          </div>
-
-          <!-- 추가적인 게시물 카드를 필요한 만큼 추가할 수 있습니다 -->
-
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="http://localhost:8080?food=전체">메인</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="http://localhost:8080?food=반찬">반찬</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080?food=국, 찌게">국 &amp; 찌게</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080?food=후식">후식</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080?food=일품">일품</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080?food=기타">기타</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <main role="main" class="col-md-10 ml-sm-auto">
+                <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                    <form class="form-inline" style="flex-wrap: nowrap;">
+                        <input id="search" class="form-control mr-sm-2" type="search" placeholder="요리 검색" aria-label="요리 검색">
+                    </form>
+                    <button id="button" class="btn btn-outline-success my-2 my-sm-0" onclick="redirectToSearchPage()">검색</button>
+                </div>
+    
+                <h1>미역요리 레시피 </h1>
+    
+                <div class="card-columns">
+                    <div class="card" data-url="/recipe/1034/%ED%99%A9%ED%83%9C%EB%AF%B8%EC%97%AD%20%EA%B3%A4%EC%95%BD%EC%8A%A4%ED%94%84">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00640_2.png" alt="황태미역 곤약스프" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">황태미역 곤약스프</h5>
+                            <h5 class="card-title">1034</h5>
+                            <p class="card-text">된장에 두부를 섞어서 나트륨을 감소시킬 수 있어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1155/%EB%AF%B8%EC%97%AD%EB%B3%B6%EC%9D%8C%EB%B0%A5">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00217_2.png" alt="미역볶음밥" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역볶음밥</h5>
+                            <h5 class="card-title">1155</h5>
+                            <p class="card-text">미역과 해산물로 짭짤한 맛을 내 소금을 적게 사용하고, 들깻가루를 넣어
+    고소한 맛을 더했다.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1219/%EB%AF%B8%EC%97%AD%20%EB%8B%AD%EA%B0%80%EC%8A%B4%EC%82%B4%EC%A0%84">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00363_2.png" alt="미역 닭가슴살전" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역 닭가슴살전</h5>
+                            <h5 class="card-title">1219</h5>
+                            <p class="card-text">나트륨을 줄인 간장에 고추냉이를 넣어서 만든 소스는 미역의 풍부한 맛을 살려주고, 부족한 맛을 잡아주어 나트륨 함량을 낮췄으며 두부를 섞어 고소함을 더해주었다.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1404/%EB%AF%B8%EC%97%AD%EC%A4%84%EA%B8%B0%EB%91%90%EB%B6%80%EB%AC%B4%EC%B9%A8">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00407_2.png" alt="미역줄기두부무침" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역줄기두부무침</h5>
+                            <h5 class="card-title">1404</h5>
+                            <p class="card-text">양념장에 다진양파, 마늘, 맛간장을 이용해 일반 간장 소스보다 염분을 낮추었으며, 식초를 넣어 새콤함을 더해 주었다.
+    혼합 견과류를 추가하여 고소함을 더해주어 두부무침의 풍미를 높일 수 있었다.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1458/%EB%AF%B8%EC%97%AD%EC%A0%84%EB%B3%B5%EC%A3%BD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00431_2.png" alt="미역전복죽" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역전복죽</h5>
+                            <h5 class="card-title">1458</h5>
+                            <p class="card-text">전복 껍질에서 나오는 구수한 맛과 짠맛이 추가로 간을 안해도 염도를 맞출 수가 있었다.
+    검정깨의 고소한 맛은 죽을 먹기 전에 간을 하지 않아도 담백하고 고소한 맛으로 나트륨 줄인 죽을 만들 수가 있다.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1484/%EB%AF%B8%EC%97%AD%EC%86%8C%EC%8A%A4%EC%99%80%20%ED%83%80%EB%A5%B4%ED%83%80%EB%A5%B4">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00594_2.png" alt="미역소스와 타르타르" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역소스와 타르타르</h5>
+                            <h5 class="card-title">1484</h5>
+                            <p class="card-text">미역과 새우에서 나오는 천연 감칠맛을 이용했기 때문에 소금을 사용할 필요가 없어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1591/%EB%A7%88%EB%93%A4%EA%B9%A8%EB%AF%B8%EC%97%AD%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309012227_1583727747787.JPG" alt="마들깨미역국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">마들깨미역국</h5>
+                            <h5 class="card-title">1591</h5>
+                            <p class="card-text">들깨가루의 고소한 맛으로 나트륨 사용을 줄였어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1605/%ED%99%A9%ED%83%9C%EB%AF%B8%EC%97%AD%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308030341_1678255421758.jpg" alt="황태미역국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">황태미역국</h5>
+                            <h5 class="card-title">1605</h5>
+                            <p class="card-text">•칼륨이 풍부한 미역을 식재료로 사용하고, 황태 및 채소를 통해 재료 본연의 맛을 살렸어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1639/%EA%B0%90%EC%9E%90%EB%AF%B8%EC%97%AD%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015125_1583729485543.JPG" alt="감자미역국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">감자미역국</h5>
+                            <h5 class="card-title">1639</h5>
+                            <p class="card-text">감자에서 나오는 전분이 깊은 맛을 내줘서 염분 사용을 줄일 수 있어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1654/%EC%BD%9C%EB%A6%AC%ED%94%8C%EB%9D%BC%EC%9B%8C%EB%AF%B8%EC%97%AD%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309023204_1583731924541.JPG" alt="콜리플라워미역국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">콜리플라워미역국</h5>
+                            <h5 class="card-title">1654</h5>
+                            <p class="card-text">건표고버섯과 건새우를 갈아 만든 천연조미료가 풍미를 높여 소금사용을 줄여줘요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1702/%EB%AF%B8%EC%97%AD%20%EB%AC%BC%EC%98%A4%EC%A7%95%EC%96%B4%20%EC%97%B0%EB%91%90%EB%B6%80%20%EC%B4%88%ED%9A%8C">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053521_1416213321929.jpg" alt="미역 물오징어 연두부 초회" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역 물오징어 연두부 초회</h5>
+                            <h5 class="card-title">1702</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1736/%EC%86%A1%EC%9D%B4%20%EB%AF%B8%EC%97%AD%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053603_1416213363580.jpg" alt="송이 미역국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">송이 미역국</h5>
+                            <h5 class="card-title">1736</h5>
+                            <p class="card-text">죽은 항상 소금 간을 마지막에 해야 묽어지지 않는다.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/1933/%EB%AF%B8%EC%97%AD%20%EC%A1%B0%EB%9E%AD%EC%9D%B4%20%EB%96%A1%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053339_1416213219015.jpg" alt="미역 조랭이 떡국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역 조랭이 떡국</h5>
+                            <h5 class="card-title">1933</h5>
+                            <p class="card-text">조랭이 떡국은 일품요리로 서빙하고 국물은 0.7% 염도로 맞춘다.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/2049/%EB%B0%94%EC%A7%80%EB%9D%BD%20%EB%AF%B8%EC%97%AD%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20190405/20190405050142_1554451302804.jpg" alt="바지락 미역국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">바지락 미역국</h5>
+                            <h5 class="card-title">2049</h5>
+                            <p class="card-text">시원하고 맑은 미역국으로 바지락과 미역 자체의 염분으로 간을 맞출 수 있어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/2093/%EB%AF%B8%EC%97%AD%20%EB%AF%B8%EC%86%8C%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031437_1678342477922.jpg" alt="미역 미소국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역 미소국</h5>
+                            <h5 class="card-title">2093</h5>
+                            <p class="card-text">•가다랑어포로 우려낸 육수는 소금을 넣지 않아도 간이 맞아요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/2112/%EB%A7%9B%EC%82%B4%20%EB%AF%B8%EC%97%AD%EC%A4%84%EA%B8%B0%EC%A0%84">
+                        <img loading="lazy" src="https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9ktU" alt="맛살 미역줄기전" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">맛살 미역줄기전</h5>
+                            <h5 class="card-title">2112</h5>
+                            <p class="card-text">•미역 줄기를 물에 담그고, 게맛살을 데쳐 나트륨 함량을 줄였어요.
+    •양파를 이용하여 단맛을 내고 첨가당 사용을 줄였어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/2163/%EB%B0%94%EC%A7%80%EB%9D%BD%20%EB%AF%B8%EC%97%AD%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20190405/20190405050142_1554451302804.jpg" alt="바지락 미역국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">바지락 미역국</h5>
+                            <h5 class="card-title">2163</h5>
+                            <p class="card-text">시원하고 맑은 미역국으로 바지락과 미역 자체의 염분으로 간을 맞출 수 있어요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/2207/%EB%AF%B8%EC%97%AD%20%EB%AF%B8%EC%86%8C%EA%B5%AD">
+                        <img loading="lazy" src="http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031437_1678342477922.jpg" alt="미역 미소국" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">미역 미소국</h5>
+                            <h5 class="card-title">2207</h5>
+                            <p class="card-text">•가다랑어포로 우려낸 육수는 소금을 넣지 않아도 간이 맞아요.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-url="/recipe/2226/%EB%A7%9B%EC%82%B4%20%EB%AF%B8%EC%97%AD%EC%A4%84%EA%B8%B0%EC%A0%84">
+                        <img loading="lazy" src="https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9ktU" alt="맛살 미역줄기전" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">맛살 미역줄기전</h5>
+                            <h5 class="card-title">2226</h5>
+                            <p class="card-text">•미역 줄기를 물에 담그고, 게맛살을 데쳐 나트륨 함량을 줄였어요.
+    •양파를 이용하여 단맛을 내고 첨가당 사용을 줄였어요.</p>
+                        </div>
+                    </div>
+    
+                    <!-- 추가적인 게시물 카드를 필요한 만큼 추가할 수 있습니다 -->
+    
+                </div>
+    
+            </main>
         </div>
-
-      </main>
     </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        // URL에서 food 매개변수 값을 추출하는 함수
+        function getFoodFromURL() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var foodValue = urlParams.get('food');
+            return foodValue;
+        }
+    
+        // 기존 h1 값과 추출된 food 값을 합쳐서 <h1> 요소에 설정하는 함수
+        function setH1WithFoodValue() {
+            var foodValue = getFoodFromURL();
+            var h1Element = document.querySelector('h1');
+            var originalText = h1Element.textContent;
+            var newText = foodValue + originalText;
+            h1Element.textContent = newText;
+        }
+    
+        // 페이지 로드 시 setH1WithFoodValue 함수 실행
+        window.addEventListener('DOMContentLoaded', setH1WithFoodValue);
+    
+        function redirectToSearchPage() {
+            var searchValue = document.getElementById("search").value;
+            var url = "http://localhost:8080?food=" + searchValue;
+            window.location.href = url;
+        }
+    
+        $(document).ready(function() {
+            $('.card').click(function() {
+                var url = $(this).data('url');
+                window.location.href = url;
+            });
+        });
+    </script>
+    
+    
+    <div class="ue-sidebar-container"></div></body>
 </html>
